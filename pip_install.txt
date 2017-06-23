@@ -1,0 +1,2 @@
+pip install django pillow
+当上传图片文件时，需要使用pillow

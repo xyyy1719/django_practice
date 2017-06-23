@@ -1,0 +1,10 @@
+{% load my_filters %}
+{% load my_tags %}
+<div>
+    <p>user name is {{person.name.title|cut:'Qi.'}}</p>
+    <p>user's age is {{person.age}}</p>
+    <p>{{app}}</p>
+    <p>{{user}}</p>
+    <p>{{ip_address|cut:'1'}}</p>
+    <p>{% minus2 4 %}</p>
+</div>  

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+</head>
+<body>
+    {%if errors%}
+        <ul>
+            {%for error in errors%}
+            <li style="color: red;">{{error}}</li>
+            {%endfor%}
+        </ul>
+    {%endif%}
+    <!-- action=""表示处理submit的也是当前的url, 所以不用写action="/search/" -->
+    <form action="" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html> 

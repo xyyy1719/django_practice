@@ -1,0 +1,2 @@
+Packt.Mastering.Django.Core.2016.12
+- mysite
